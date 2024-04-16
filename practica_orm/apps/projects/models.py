@@ -9,7 +9,7 @@ class Project(models.Model):
     '''
     name = models.CharField(max_length=60,null=False,blank=False)
 
-    init_date = models.DateTimeField(null=False,blank=False)
+    init_date = models.DateTimeField(auto_now_add=True,null=False,blank=False)
     
     end_date = models.DateTimeField()
 
